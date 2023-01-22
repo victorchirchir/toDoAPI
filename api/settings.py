@@ -33,7 +33,10 @@ SECRET_KEY = os.getenv('SECRET_KEY','hhhhhjklllkjh')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+
+ALLOWED_HOSTS = ['*']
+
+# ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 
@@ -111,14 +114,14 @@ WSGI_APPLICATION = "api.wsgi.application"
 
 #postgis
 DATABASES = {
-    "default": {
-        'ENGINE': 'django.db.backends.postgresql',
-        "HOST":"localhost",
-        "USER":"postgres",
-        "NAME":"toDo",
-        "PORT":"5432",
-        "PASSWORD":"I4CUI4CU",
-    }
+    # "default": {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     "HOST":"localhost",
+    #     "USER":"postgres",
+    #     "NAME":"toDo",
+    #     "PORT":"5432",
+    #     "PASSWORD":"I4CUI4CU",
+    # }
 }
 
 # IMPORTANT
