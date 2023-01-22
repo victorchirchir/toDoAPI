@@ -23,5 +23,17 @@
         "src": "/(.*)",
         "dest": "api/wsgi.py"
       }
-    ]
+    ],
+    "rewrites": [
+        { "source": "/static", "destination": "/static" },
+        { "source": "/(.*)", "destination": "api/index.py" }
+      ],
+      "functions": {
+        "api/index.py": {
+          "runtime": "vercel-python-gis@1.0.0"
+          
+        }
+      }
   }
+
+  
