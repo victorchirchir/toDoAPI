@@ -122,8 +122,8 @@ DATABASES = {
 }
 
 # IMPORTANT
-# GDAL_LIBRARY_PATH = "libgdal.so"
-# GEOS_LIBRARY_PATH = "libgeos_c.so.1"
+GDAL_LIBRARY_PATH = "libgdal.so"
+GEOS_LIBRARY_PATH = "libgeos_c.so.1"
 
 
 # os.environ['PATH'] = os.path.join(BASE_DIR, r'venv\Lib\site-packages\osgeo') + ';' + os.environ['PATH']
