@@ -102,6 +102,7 @@ if os.name == 'nt':
 #     }
 # }
 
+#postgis
 DATABASES = {
     "default": {
         "ENGINE": "django.contrib.gis.db.backends.postgis",
